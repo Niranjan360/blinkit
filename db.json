@@ -1,0 +1,14 @@
+{
+    "groceries":[
+        {
+            "id":1,
+            "gname":"Apple",
+            "price":"100",
+            "unit":"KG",
+            "image":"https://www.shutterstock.com/image-photo/red-apple-isolated-on-white-600nw-1727544364.jpg",
+            "desc":"Nutrient Value & Benefits - Contains Fibre, Flavonoids. Fiber is good for Digestive Health. Vitamin C acts as a powerful antioxidant and also helps formation of collagen that is responsible for skin and hair health. Vitamin C helps in boosting immunity, keeping ailments at the bay.",
+            "type":"fruit",
+            "shelf_life":"7"
+        }
+    ]
+}
