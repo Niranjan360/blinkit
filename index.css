@@ -47,3 +47,38 @@ nav ul li a{
 nav ul li a i{
   margin-right: 10px;
 }
+
+.home-cont{
+  background-color: white;
+  width: 100vw;
+}
+.grocery-list{
+  width: 90%;
+  margin: auto;
+}
+.grocery-list h1{
+  text-align: left;
+}
+.card-list{
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+}
+.card{
+  min-width: 250px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: solid 2px black;
+}
+.card img{
+  width: 100%;
+  height: 200px;
+  object-fit: scale-down;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
