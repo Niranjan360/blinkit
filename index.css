@@ -48,6 +48,23 @@ nav ul li a i{
   margin-right: 10px;
 }
 
+#loader{
+  width: 150px;
+  height: 150px;
+  margin: 40px auto;
+  border-top: solid 3px rgb(77, 77, 255);
+  border-left: solid 3px rgb(77, 77, 255);
+  border-right: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  border-radius: 50%;
+  animation: rotate 1s infinite linear;
+}
+@keyframes rotate {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+
 .home-cont{
   background-color: white;
   width: 100vw;
@@ -67,11 +84,22 @@ nav ul li a i{
   overflow: scroll;
 }
 .card{
-  min-width: 250px;
+  min-width: 230px;
   height: 300px;
   padding: 10px;
   border-radius: 8px;
-  border: solid 2px black;
+  border: solid 1px black;
+}
+.card h2{
+  font-size: 20px;
+  text-align: left;
+}
+.card h3{
+  margin: 10px 0px;
+  color: gray;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
 }
 .card img{
   width: 100%;
