@@ -9,6 +9,16 @@
             "desc":"Nutrient Value & Benefits - Contains Fibre, Flavonoids. Fiber is good for Digestive Health. Vitamin C acts as a powerful antioxidant and also helps formation of collagen that is responsible for skin and hair health. Vitamin C helps in boosting immunity, keeping ailments at the bay.",
             "type":"fruit",
             "shelf_life":"7"
+        },
+        {
+            "id":2,
+            "gname":"Orange Carrot",
+            "price":"40",
+            "unit":"KG",
+            "image":"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/app/images/products/sliding_image/327916a.jpg?ts=1690813169",
+            "desc":"Carrots are healthy and crunchy vegetables, perfect for serving raw in salads. Sweet in taste, they can also be cooked and used in a number of dishes like rice preparations, soups and noodles.",
+            "type":"vegitable",
+            "shelf_life":"4"
         }
     ]
 }
