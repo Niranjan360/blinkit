@@ -21,6 +21,11 @@ const Home = () => {
             .catch((err)=>{ setError(err.message); setPending(false);})
             
         } , 3000)   
+
+       if(localStorage.getItem("cartItems")==null)
+       {
+        localStorage.setItem("cartItems", "[]")
+       }
     } , [])
 
     return ( <div className="home-cont">
