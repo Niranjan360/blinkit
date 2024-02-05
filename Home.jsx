@@ -24,7 +24,7 @@ const Home = () => {
 
        if(localStorage.getItem("cartItems")==null)
        {
-        localStorage.setItem("cartItems", "[]")
+            localStorage.setItem("cartItems", "[]");
        }
     } , [])
 
