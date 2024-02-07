@@ -20,11 +20,12 @@ const Home = () => {
             .then((data)=>{ setGroceries(data);    setPending(false);})   
             .catch((err)=>{ setError(err.message); setPending(false);})
             
-        } , 3000)   
+        } , 1000)   
 
        if(localStorage.getItem("cartItems")==null)
        {
             localStorage.setItem("cartItems", "[]");
+            localStorage.setItem("items", "[]");
        }
     } , [])
 

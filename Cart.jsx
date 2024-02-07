@@ -5,7 +5,6 @@ const Cart = () => {
     let[cartItems , setCartItems] = useState(null);
     let[cartPrice , setCartPrice] = useState(0);
 
-
     useEffect(()=>{
         let data = JSON.parse(localStorage.getItem("cartItems"));
         setCartItems(data);
