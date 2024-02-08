@@ -51,6 +51,33 @@ nav ul li a i{
   margin-right: 10px;
 }
 
+/* ------------------------------adds------------------------------ */
+
+.ad1{
+  width: 90%;
+  height: 300px;
+  margin: auto;
+}
+.ad1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.ad2{
+  width: 90%;
+  height: 300px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ad2 img{
+  width: 30%;
+  height: 300px;
+  object-fit: scale-down;
+}
+
+
 #loader{
   width: 150px;
   height: 150px;
