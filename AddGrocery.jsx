@@ -1,4 +1,7 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddGrocery = () => {
 
@@ -9,6 +12,8 @@ const AddGrocery = () => {
     let desc = useRef();
     let type = useRef();
     let life = useRef();
+
+    let navigate = useNavigate();
 
     let handleAddGrocery = (e)=>{
         e.preventDefault();
@@ -25,16 +30,16 @@ const AddGrocery = () => {
 
         let config = {
             method : "POST",
-            header : {"Content-Type":"application/json"},
+            header : {"content-type":"xyz/json"},
             body : JSON.stringify(grocery)
         }
 
         fetch("http://localhost:4000/groceries" , config)
-        .then(()=>{})
-        .catch(()=>{})
-
+        .then(()=>{
+            toast.success("Data added successfuly to the DB")
+            setTimeout(()=>{ navigate("/")} , 3000)
+        })
     }
-
 
     return ( <div className="add-grocery-cont">
                 <h1>Add New Grocery</h1>
@@ -85,6 +90,8 @@ const AddGrocery = () => {
 
                     <input type="submit" value="Add grocery"/>
                 </form>
+
+                <ToastContainer />
             </div> );
 }
  
