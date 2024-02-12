@@ -223,3 +223,41 @@ nav ul li a i{
   font-size: 20px;
   margin: 0px 10px;
 }
+
+
+
+/* ----------------add grocery---------------------------------- */
+
+.add-grocery-cont{
+  padding: 20px 80px;
+}
+.add-grocery-cont form{
+  background-color: rgb(195, 227, 255);
+  padding: 15px;
+  width: 700px;
+  height: auto;
+  margin: 6px auto;
+  border-radius: 8px;
+}
+.inp-grp{
+  width: 80%;
+  height: 40px;
+  margin:  10px auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.inp-grp input , select , textarea{
+  border: none;
+}
+
+.add-grocery-cont form input[type="submit"]{
+  background-color: black;
+  padding: 6px 18px;
+  border:  solid 1px black;
+  color: white;
+  font-size: 18px;
+}
+.add-grocery-cont form input[type="submit"]:active{
+  background-color: white;
+  color: black;
+}
