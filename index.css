@@ -261,3 +261,30 @@ nav ul li a i{
   background-color: white;
   color: black;
 }
+
+
+
+/* ----------------search------------------ */
+.searchbar{
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchbar label{
+  font-size: 28px;
+  font-weight: 600;
+  margin-right:20px ;
+}
+.searchbar input{
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  border: solid 1px rgb(77, 77, 255);
+  border-radius: 6px;
+}
+.searchbar input:focus{
+  border: solid 1px rgb(77, 77, 255);
+  outline: solid 2px rgba(165, 165, 255, 0.459);
+}

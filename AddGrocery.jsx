@@ -17,7 +17,6 @@ const AddGrocery = () => {
 
     let handleAddGrocery = (e)=>{
         e.preventDefault();
-
         let grocery = {
             gname: gname.current.value,
             price: price.current.value,
@@ -27,13 +26,11 @@ const AddGrocery = () => {
             type: type.current.value,
             shelf_life: life.current.value
         }
-
         let config = {
             method : "POST",
             header : {"content-type":"xyz/json"},
             body : JSON.stringify(grocery)
         }
-
         fetch("http://localhost:4000/groceries" , config)
         .then(()=>{
             toast.success("Data added successfuly to the DB")
@@ -43,7 +40,6 @@ const AddGrocery = () => {
 
     return ( <div className="add-grocery-cont">
                 <h1>Add New Grocery</h1>
-
                 <form onSubmit={handleAddGrocery}>
                     <div className="inp-grp">
                         <label>Grocery Name</label>
@@ -90,7 +86,6 @@ const AddGrocery = () => {
 
                     <input type="submit" value="Add grocery"/>
                 </form>
-
                 <ToastContainer />
             </div> );
 }
