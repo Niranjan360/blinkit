@@ -350,13 +350,6 @@ nav ul li a i{
   from{transform: scale(0);}
   to{transform: scale(1)}
 }
-
-
-
-
-
-
-
 .update-grocery-cont form{
   background-color: rgb(195, 227, 255);
   padding: 15px;

@@ -15,11 +15,13 @@ const Home = () => {
 
                 {groceries && <Adds/>}
 
-                {groceries &&  <GroceryList groceries={groceries} title="All Grocery"/> }
-
                 {groceries &&  <GroceryList groceries={groceries.filter(v=>v.type=="fruit")} title="Fruits"/> }
 
                 {groceries &&  <GroceryList groceries={groceries.filter(v=>v.type=="vegetable")} title="Vegetable"/> }
+
+                {groceries &&  <GroceryList groceries={groceries.filter(v=>v.type=="Soft drink")} title="Drinks"/> }
+
+                {groceries &&  <GroceryList groceries={groceries.filter(v=>v.type=="snack")} title="Snaks"/> }
 
             </div> );
 } 
