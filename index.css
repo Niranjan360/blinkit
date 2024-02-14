@@ -296,15 +296,23 @@ nav ul li a i{
 .description{
   padding: 20px 80px;
   display: flex;
+  justify-content: space-evenly
+  
+  ;
 }
-.g-img{
-  width: 400px;
-  height: 400px;
+.g-image{
+  width: 500px;
+  height: 500px;
 }
-.g-img img{
+.g-image img{
   width: 100%;
   height: 100%;
   object-fit: scale-down;
+}
+.g-details{
+  width: 500px;
+  height: 500px;
+  padding: 50px 10px;
 }
 .delete-btn{
   background-color: rgb(255, 28, 28);
@@ -344,18 +352,22 @@ nav ul li a i{
   position: absolute;
   top: 0px;
   left: 0px;
-  animation: pop 0.2s linear;
+  animation: pop 0.3s;
+  color: white;
 }
 @keyframes pop {
   from{transform: scale(0);}
   to{transform: scale(1)}
+}
+.update-grocery-cont h1{
+  margin: 12px auto;
 }
 .update-grocery-cont form{
   background-color: rgb(195, 227, 255);
   padding: 15px;
   width: 700px;
   height: auto;
-  margin: 6px auto;
+  margin: 12px auto;
   border-radius: 8px;
 }
 .inp-grp{
@@ -367,6 +379,7 @@ nav ul li a i{
 }
 .inp-grp input , select , textarea{
   border: none;
+  padding-left: 10px;
 }
 
 .update-grocery-cont form input[type="submit"]{
@@ -379,4 +392,11 @@ nav ul li a i{
 .update-grocery-cont form input[type="submit"]:active{
   background-color: white;
   color: black;
+}
+.update-grocery-cont button{
+  background-color: rgb(255, 28, 28);
+  padding: 6px 12px;
+  font-size: 16px;
+  color: white;
+  border: none;
 }

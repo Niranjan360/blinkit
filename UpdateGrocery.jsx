@@ -27,7 +27,8 @@ const UpdateGrocery = ({grocery , setPopup}) => {
 
     let handleUpdateGrocery = (e)=>{
         e.preventDefault();
-        let grocery = {
+
+        let updatedgrocery = {
             gname: gname.current.value,
             price: price.current.value,
             unit: unit.current.value,
@@ -36,20 +37,23 @@ const UpdateGrocery = ({grocery , setPopup}) => {
             type: type.current.value,
             shelf_life: life.current.value
         }
+
         let config = {
             method : "PUT",
-            header : { "Accept-Type":"application/json" , "Content-Type":"application/json" },
-            body : JSON.stringify(grocery)
+            header : {"Accept-Type":"application/json" , "Content-Type":"application/json" },
+            body : JSON.stringify(updatedgrocery)
         }
-        fetch("http://localhost:4000/groceries/"+grocery.id , config)
-        .then(()=>{
+
+        fetch(`http://localhost:4000/groceries/${grocery.id}` , config)
+        .then((res)=>{
+            console.log(res.url);
             toast.success("Data Update successfuly to the DB");
             window.location.reload();
         })
     }
 
     return ( <div className="update-grocery-cont">
-                <h1>Update Grocery</h1>
+                <h1>Update Grocery {grocery.id}</h1>
                 <form onSubmit={handleUpdateGrocery}>
                     <div className="inp-grp">
                         <label>Grocery Name</label>
@@ -63,7 +67,7 @@ const UpdateGrocery = ({grocery , setPopup}) => {
                         <label>Unit</label>
                         <select ref={unit}>
                             <option>--select--</option>
-                            <option value="1">l</option>
+                            <option value="l">l</option>
                             <option value="ml">ml</option>
                             <option value="g">g</option>
                             <option value="kg">kg</option>

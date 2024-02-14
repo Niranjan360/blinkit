@@ -30,7 +30,7 @@ const GroceryDescription = () => {
                 {pending && <div id="loader"></div>}
 
                 {grocery && <div className="description">
-                                <div className="g-img">
+                                <div className="g-image">
                                     <img src={grocery.image} alt="" />
                                 </div>
                                 <div className="g-details">
@@ -40,7 +40,6 @@ const GroceryDescription = () => {
                                     <p>{grocery.desc}</p>
                                     <button className="delete-btn" onClick={handleDeleteGrocery}> Delete Grocery </button>
                                     <button className="update-btn" onClick={()=>{setPopup(true)}}> Update Grocery </button>
-
                                 </div>
                             </div>}
 
